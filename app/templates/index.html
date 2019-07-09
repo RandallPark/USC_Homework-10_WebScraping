@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Info</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mars Bound ?!?!</h1>
+      <p>Find all you need to know here!</p>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Updated Mars Info!</a></p>
+    </div>
+    <h2>The typical Mars weather is:</h2>
+    <h3>Title: {{ mars_data.news_title }}</h3>
+    <h3>Story: {{ mars_data.news_p }}</h3>
+  </div>
+  </div>
+  <div>
+    <a href="javascript: alert('This feature has been discontinued do to lack of interest...')">Click here for a cool feature!</a>
+  </div>
+  <div class="container-fluid">
+    <p>For raw data in a JSON format follow this link:</p>
+    <p>
+      <a class="btn btn-info btn-sm" href="/json" role="button">Click here for JSON</a>
+      <a class="btn btn-info btn-sm" href="javascript: alert('This feature has been discontinued do to lack of interest...')">Click here for a cool feature!</a>
+    </p>
+  </div>
+</body>
+
+</html>
