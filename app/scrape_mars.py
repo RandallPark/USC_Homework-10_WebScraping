@@ -3,13 +3,23 @@ from bs4 import BeautifulSoup as bs
 from splinter import Browser
 import time
 import datetime
-
+import os
 #Global variable for saving return from usgs_get_images function.
 hemisphere_image_urls = []
+# path = !which chromedriver
+
+def get_path(target_file):
+    path=os.getenv('PATH')
+    for file_path in path.split(os.path.pathsep):
+        file_path=os.path.join(file_path,target_file)
+        if os.path.exists(file_path) and os.access(file_path,os.X_OK):
+            return file_path
 
 def init_browser():
     # Set the executable path and initialize the chrome browser in splinter
-    executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
+    #executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
+    path = get_path('chromedriver')
+    executable_path = {'executable_path': path}
     browser = Browser("chrome", **executable_path)
     return browser
 

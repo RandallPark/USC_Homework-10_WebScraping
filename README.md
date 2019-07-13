@@ -1,3 +1,21 @@
+# Notice
+**Chromedriver** may need to be reinstalled for compatibility.  
+On Mac, I followed the [install procedure][1] using homebrew ```brew cask install chromedriver``` and was prompted in the terminal to use ```brew cask reinstall chromedriver```.   
+Chromedriver **path** has been hard coded in scrape_mars.py  
+*(when changing path variable you may notice code commented out that was an attempted to set up a search for chromedriver path)*  
+**MongoDB** has to be running in for PyMongo to connect.  
+MongoDB **path** is hardcoded in app.py 
+
+## Notes on installation
+
+Chrome Webdriver docs [here][1].  
+Splinter docs [here](https://splinter.readthedocs.io/en/latest/tutorial.html "click to go to docs").  
+
+
+
+
+[1]: https://splinter.readthedocs.io/en/latest/drivers/chrome.html "click to go to docs"
+
 # Mission to Mars
 
 ![mission_to_mars](app/images/mission_to_mars.jpg)
