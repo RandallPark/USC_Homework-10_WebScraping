@@ -1,8 +1,9 @@
 # Notice
 **Chromedriver** may need to be reinstalled for compatibility.  
 On Mac, I followed the [install procedure][1] using homebrew ```brew cask install chromedriver``` and was prompted in the terminal to use ```brew cask reinstall chromedriver```.   
-Chromedriver **path** has been hard coded in scrape_mars.py  
-*(when changing path variable you may notice code commented out that was an attempted to set up a search for chromedriver path)*  
+**scrape_mars.py** is coded to find **path** to Chromedriver.  
+Chromedriver **path** can be hard coded in scrape_mars.py  
+
 **MongoDB** has to be running in for PyMongo to connect.  
 MongoDB **path** is hardcoded in app.py 
 
