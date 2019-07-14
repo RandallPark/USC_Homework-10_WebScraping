@@ -1,3 +1,8 @@
+# USC Homework-10 Web Scraping
+**Web Scraping and Document Database homework for USC Data Analytics Bootcamp**  
+The repo is located [here][1]
+
+
 # Notice
 **Chromedriver** may need to be reinstalled for compatibility.  
 On Mac, I followed the [install procedure][1] using homebrew ```brew cask install chromedriver``` and was prompted in the terminal to use ```brew cask reinstall chromedriver```.   
@@ -16,21 +21,21 @@ Splinter docs [here](https://splinter.readthedocs.io/en/latest/tutorial.html "cl
 
 [1]: https://splinter.readthedocs.io/en/latest/drivers/chrome.html "click to go to docs"
 
-# Mission to Mars
+## Unit 12 | Assignment -  Mission to Mars
 
 ![mission_to_mars](app/images/mission_to_mars.jpg)
 
-In this assignment, you will build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what you need to do.
+This assignment is to build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what needs to be done.
 
 ## Step 1 - Scraping
 
-Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
+Complete the initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
 
-* Create a Jupyter Notebook file called `mission_to_mars.ipynb` and use this to complete all of your scraping and analysis tasks. The following outlines what you need to scrape.
+* Create a Jupyter Notebook file called `mission_to_mars.ipynb` and use this to complete all of your scraping and analysis tasks. The following outlines what needs to be scraped.
 
 ### NASA Mars News
 
-* Scrape the [NASA Mars News Site](https://mars.nasa.gov/news/) and collect the latest News Title and Paragraph Text. Assign the text to variables that you can reference later.
+* Scrape the [NASA Mars News Site](https://mars.nasa.gov/news/) and collect the latest News Title and Paragraph Text. Assign the text to variables that can be referenced later.
 
 ```python
 # Example:
@@ -95,30 +100,21 @@ hemisphere_image_urls = [
 
 Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
 
-* Start by converting your Jupyter notebook into a Python script called `scrape_mars.py` with a function called `scrape` that will execute all of your scraping code from above and return one Python dictionary containing all of the scraped data.
+* Start by converting the Jupyter notebook into a Python script called `scrape_mars.py` with a function called `scrape` that will execute all of your scraping code from above and return one Python dictionary containing all of the scraped data.
 
-* Next, create a route called `/scrape` that will import your `scrape_mars.py` script and call your `scrape` function.
+* Next, create a route called `/scrape` that will import the `scrape_mars.py` script and call the `scrape` function.
 
   * Store the return value in Mongo as a Python dictionary.
 
-* Create a root route `/` that will query your Mongo database and pass the mars data into an HTML template to display the data.
+* Create a root route `/` that will query the Mongo database and pass the mars data into an HTML template to display the data.
 
-* Create a template HTML file called `index.html` that will take the mars data dictionary and display all of the data in the appropriate HTML elements. Use the following as a guide for what the final product should look like, but feel free to create your own design.
+* Create a template HTML file called `index.html` that will take the mars data dictionary and display all of the data in the appropriate HTML elements. The following as a guide for what the final product should look like, but design parameters are flexible.
 
 ![final_app_part1.png](app/images/final_app_part1.png)
 ![final_app_part2.png](app/images/final_app_part2.png)
 
 - - -
 
-## Step 3 - Submission
-
-To submit your work to BootCampSpot, create a new GitHub repository and upload the following:
-
-1. The Jupyter Notebook containing the scraping code used.
-
-2. Screenshots of your final application.
-
-3. Submit the link to your new repository to BootCampSpot.
 
 ## Hints
 
@@ -129,5 +125,9 @@ To submit your work to BootCampSpot, create a new GitHub repository and upload t
 * Use Bootstrap to structure your HTML template.
 
 ## Copyright
+This selection of code is displayed by to Warren Ross @ [this GitHub][1].  
+The content was derived from an assignment distributed by USC Data Analytics Bootcamp and Trilogy. Copyright anotated below:
 
 © 2019 Trilogy Education Services. All Rights Reserved.
+
+[1]: https://github.com/RandallPark/USC_Homework-10_WebScraping "my repo"
