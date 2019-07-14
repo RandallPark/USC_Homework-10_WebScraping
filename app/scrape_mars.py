@@ -111,13 +111,13 @@ def scrape_info():
     browser = init_browser()
     news_title, news_p, news_link = nasa_news(browser)
     hemisphere_image_urls = usgs_get_images(browser)
-    current_dt = datetime.datetime.now()
+    current_dt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     scraped_data = {
         'hemisphere_image_urls' : hemisphere_image_urls,
         'news_title' : news_title,
         'news_p' : news_p,
         'news_link' : news_link,
-        'update_time' : current_dt,
+        'time_of_scrape' : current_dt,
     }
     return scraped_data
 
