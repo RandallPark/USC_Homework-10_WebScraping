@@ -12,15 +12,17 @@ Chromedriver **path** can be hard coded in scrape_mars.py
 **MongoDB** has to be running in for PyMongo to connect.  
 MongoDB **path** is hardcoded in app.py 
 
-## Notes on installation
+## Resources
 
-Chrome Webdriver docs [here][1].  
-Splinter docs [here](https://splinter.readthedocs.io/en/latest/tutorial.html "click to go to docs").  
+Chrome Webdriver docs [here][2].  
+Splinter docs [here][3].  
+Lining up images with [Bootstrap][4]
 
 
 
-
-[1]: https://splinter.readthedocs.io/en/latest/drivers/chrome.html "click to go to docs"
+[2]: https://splinter.readthedocs.io/en/latest/drivers/chrome.html "click to go to docs"
+[3]: https://splinter.readthedocs.io/en/latest/tutorial.html "click to go to docs"
+[4]: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
 
 ## Unit 12 | Assignment -  Mission to Mars
 
