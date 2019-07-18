@@ -4,8 +4,9 @@ The repo is located [here][1]
 
 
 # Notice
+This code requires **Python 3.6**. When tested with python 3.7 there was compatibility issues with BeautifulSoup data types.  
 **Chromedriver** may need to be reinstalled for compatibility.  
-On Mac, I followed the [install procedure][1] using homebrew ```brew cask install chromedriver``` and was prompted in the terminal to use ```brew cask reinstall chromedriver```.   
+On Mac, I followed the [install procedure][2] using homebrew ```brew cask install chromedriver``` and was prompted in the terminal to use ```brew cask reinstall chromedriver```.   
 **scrape_mars.py** is coded to find **path** to Chromedriver.  
 Chromedriver **path** can be hard coded in scrape_mars.py  
 
@@ -17,12 +18,17 @@ MongoDB **path** is hardcoded in app.py
 Chrome Webdriver docs [here][2].  
 Splinter docs [here][3].  
 Lining up images with [Bootstrap][4]
+Getting path to file with [Python][6]
 
+### ideas to add
+* [Tables with d3][5]
 
 
 [2]: https://splinter.readthedocs.io/en/latest/drivers/chrome.html "click to go to docs"
 [3]: https://splinter.readthedocs.io/en/latest/tutorial.html "click to go to docs"
 [4]: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
+[5]: https://vis4.net/blog/2015/04/making-html-tables-in-d3-doesnt-need-to-be-a-pain/ "making tables fun again"
+[6]: https://stackoverflow.com/questions/9877462/is-there-a-python-equivalent-to-the-which-command
 
 ## Unit 12 | Assignment -  Mission to Mars
 
